@@ -11,10 +11,9 @@ jobs:
   build:
 
     runs-on: self-hosted
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
+    
     steps:
+    - name: Install dependencies
     - run: npm i 
+    - run: cd noticeapp
+    - run: npm start
