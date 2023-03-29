@@ -7,5 +7,5 @@ app.listen(9000, () => {
 })
 
 app.get("/", (req, res) => {
-    res.send("Teset");
+    res.send("Tesert");
 })
