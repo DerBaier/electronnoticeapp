@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: checking out
         uses: actions/checkout@v3
-      - name: installing...
       - run: npm install --platform=win32
       - run: npm start
+      - run: echo "Hello"
       - run: service noticeapp restart
